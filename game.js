@@ -12,6 +12,7 @@ $(document).keypress(function() {
 
 //to increase level of the game by adding the color sequence to color_sequence array
 function next_sequence(){
+    user_sequence=[];
     $("h1").text("Level "+ level);
 
     var random_number=Math.floor(Math.random()*4);
